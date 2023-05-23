@@ -1,0 +1,7 @@
+<%= form_with model: @task do |t| %>
+   <%= t.label :title %>
+   <%= t.text_field :title, placeholder: "Type the task title" %>
+   <%= t.label :details %>
+   <%= t.text_field :details, placeholder: "Type Task details" %>
+   <%= t.submit %>
+<% end %>
